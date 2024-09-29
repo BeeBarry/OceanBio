@@ -1,10 +1,9 @@
 namespace OceanBio.Core.Entities;
-{
-    public class AnimalType
+
+    public enum AnimalType
     {
         MARINE,
         TERRESTRIAL,
-        AMPHIBIOUS,
+        AMPHIBIOUS
     }
-
-}
+    

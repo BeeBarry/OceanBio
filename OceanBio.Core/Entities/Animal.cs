@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 namespace OceanBio.Core.Entities;
-{
+
     public class Animal
     {
         public int Id { get; set; }
@@ -59,4 +59,3 @@ namespace OceanBio.Core.Entities;
     
     
 
-}
