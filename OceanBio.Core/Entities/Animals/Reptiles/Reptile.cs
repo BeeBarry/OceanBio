@@ -1,4 +1,4 @@
-namespace OceanBio.Core.Entities;
+namespace OceanBio.Core.Entities.Animals.Reptiles;
 
 public class Reptile : Animal
 {

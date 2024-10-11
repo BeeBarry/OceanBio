@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace OceanBio.Core.Entities;
+namespace OceanBio.Core.Entities.Animals.Fish;
 
 public class Fish : Animal
 {

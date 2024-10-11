@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OceanBio.Core.Entities;
+namespace OceanBio.Core.Entities.Animals;
 
     public class Animal
     {

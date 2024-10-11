@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace OceanBio.Core.Entities;
+namespace OceanBio.Core.Entities.Animals.Birds;
 
 public class Bird : Animal
 {
