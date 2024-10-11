@@ -6,10 +6,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Entities\Animals\Birds\" />
-      <Folder Include="Entities\Animals\Fish\" />
-      <Folder Include="Entities\Animals\Reptiles\" />
-    </ItemGroup>
-
 </Project>
