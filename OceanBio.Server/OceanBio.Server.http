@@ -1,0 +1,6 @@
+@OceanBio.Server_HostAddress = http://localhost:5255
+
+GET {{OceanBio.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

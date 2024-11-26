@@ -1,0 +1,45 @@
+## .NET Core
+bin/
+obj/
+out/
+
+## Rider
+.idea/
+*.sln.iml
+.idea/
+*.suo
+*.user
+.vs/
+[Bb]in/
+[Oo]bj/
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Docker
+.docker/
+*.env
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
