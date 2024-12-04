@@ -3,7 +3,7 @@ using OceanBio.Shared.Entities;
 
 namespace OceanBio.Server.DataAccess.Repositories;
 
-public class AnimcalCategoryRepository(AppDbContext context)
+public class AnimalCategoryRepository(AppDbContext context)
 {
     private readonly AppDbContext _context = context;
 
@@ -20,6 +20,7 @@ public class AnimcalCategoryRepository(AppDbContext context)
     public async Task AddAsync(AnimalCategory category)
     {
         await _context.AnimalCategories.AddAsync(category);
+        await _context.SaveChangesAsync();
     }
 
 }

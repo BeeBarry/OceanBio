@@ -20,5 +20,6 @@ public class AnimalFactRepository(AppDbContext context)
     public async Task AddAsync(AnimalFact fact)
     {
         await _context.AnimalFacts.AddAsync(fact);
+        await _context.SaveChangesAsync();
     }
 }

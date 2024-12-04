@@ -20,5 +20,8 @@ public class AnimalRepository(AppDbContext context)
     public async Task AddAsync(Animal animal)
     {
         await _context.Animals.AddAsync(animal);
+        await _context.SaveChangesAsync();
     }
+    
+    //SKAPA DELETE METOD
 }
