@@ -1,0 +1,22 @@
+name : OceanBio
+services:
+  oceanbio-db:
+    container_name: OceanBio-SQL
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    platform: linux/amd64  
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=OceanBio28!
+    ports:
+      - "1435:1433"
+    volumes:
+      - oceanbio-data:/var/opt/mssql
+    networks:
+      - oceanbio-network
+
+volumes:
+  oceanbio-data:
+
+networks:
+  oceanbio-network:
+    driver: bridge
