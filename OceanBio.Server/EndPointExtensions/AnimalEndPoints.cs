@@ -1,5 +1,6 @@
 using OceanBio.Server.DataAccess.Repositories;
 using OceanBio.Shared.Entities;
+using OceanBio.Shared.Models;
 
 namespace OceanBio.Server.EndPointExtensions;
 
@@ -21,7 +22,13 @@ public static class AnimalEndPoints
 
        group.MapGet("{id}", async (AnimalRepository repository, int id) =>
        {
-           return await repository.GetByIdAsync(id);
+           var animal = await repository.GetByIdAsync(id);
+
+           if (animal is null)
+           {
+               return Results.NotFound(ServiceResponse<Animal>.Fail($"Animal with id {id} was not found."));
+           }
+           return Results.Ok(ServiceResponse<Animal>.Success(animal));
        });
 
         return app;
